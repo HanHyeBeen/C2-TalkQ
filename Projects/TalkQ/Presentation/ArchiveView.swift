@@ -97,7 +97,7 @@ struct ArchiveView: View {
                     Text(mentor.name)
                         .font(Font.custom("UhBee Se_hyun Bold", size: 14))
                         .multilineTextAlignment(.center)
-                        .foregroundColor(C2App.TextPrimary)
+                        .foregroundColor(TalkQApp.TextPrimary)
                         .padding(.bottom, 20)
                 }
             }
@@ -144,7 +144,7 @@ struct ArchiveView: View {
                     Text(learner.name)
                         .font(Font.custom("UhBee Se_hyun Bold", size: 14))
                         .multilineTextAlignment(.center)
-                        .foregroundColor(C2App.TextPrimary)
+                        .foregroundColor(TalkQApp.TextPrimary)
                         .padding(.bottom, 20)
                 }
             }

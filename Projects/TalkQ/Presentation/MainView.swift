@@ -45,7 +45,7 @@ struct MainView: View {
     
     var body: some View {
         ZStack {
-            C2App.BGColor.ignoresSafeArea()
+            TalkQApp.BGColor.ignoresSafeArea()
             
             VStack() {
                 HStack {
@@ -132,12 +132,12 @@ struct MainView: View {
                                 .weight(.bold)
                         )
                         .multilineTextAlignment(.center)
-                        .foregroundColor(C2App.TextPrimary)
+                        .foregroundColor(TalkQApp.TextPrimary)
                         .padding(10)
                         .overlay(
                             Rectangle()
                                 .frame(height: 2) // 두께
-                                .foregroundColor(C2App.TextSecondary), // 색상
+                                .foregroundColor(TalkQApp.TextSecondary), // 색상
                             alignment: .bottom
                         )
                 }
@@ -296,7 +296,7 @@ struct MainView: View {
                                 Font.custom("SUIT-ExtraBold", size: 20)
                             )
                             .multilineTextAlignment(.center)
-                            .foregroundColor(C2App.Sub1)
+                            .foregroundColor(TalkQApp.Sub1)
                     }
                 }
                 .font(.title2)
@@ -357,7 +357,7 @@ struct MainView: View {
                             .font(Font.custom("SUIT-ExtraBold", size: 24))
                         Text(popupField)
                             .font(Font.custom("SUIT-ExtraBold", size: 20))
-                            .foregroundColor(C2App.TextSub)
+                            .foregroundColor(TalkQApp.TextSub)
                         Spacer()
                     }
                     .frame(height: 100)
@@ -396,7 +396,7 @@ struct MainView: View {
                                     Font.custom("SUIT-ExtraBold", size: 20)
                                 )
                                 .multilineTextAlignment(.center)
-                                .foregroundColor(C2App.Sub1)
+                                .foregroundColor(TalkQApp.Sub1)
                                 .padding(.horizontal, 62)
                         }
                     }

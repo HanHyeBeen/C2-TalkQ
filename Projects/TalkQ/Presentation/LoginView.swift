@@ -59,7 +59,7 @@ struct LoginView: View {
                             .padding()
                             .font(Font.custom("SUIT-ExtraBold", size: 20))
                             .frame(maxWidth: .infinity)
-                            .foregroundColor(C2App.TextPrimary)
+                            .foregroundColor(TalkQApp.TextPrimary)
                             .cornerRadius(10)
                     }
                 }

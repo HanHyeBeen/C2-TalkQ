@@ -11,7 +11,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		9F3806E42DB2256C00D01E9A /* Exceptions for "TalkQ" folder in "TalkQ" target */ = {
+		9FF193092E52F80F00916EAC /* Exceptions for "TalkQ" folder in "TalkQ" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -24,7 +24,7 @@
 		9F2614722DA4B3B70045A888 /* TalkQ */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				9F3806E42DB2256C00D01E9A /* Exceptions for "TalkQ" folder in "TalkQ" target */,
+				9FF193092E52F80F00916EAC /* Exceptions for "TalkQ" folder in "TalkQ" target */,
 			);
 			path = TalkQ;
 			sourceTree = "<group>";
@@ -269,7 +269,6 @@
 				DEVELOPMENT_TEAM = TQR2QH6NMJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = C2/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TalkQ;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,7 +301,6 @@
 				DEVELOPMENT_TEAM = TQR2QH6NMJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = C2/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TalkQ;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

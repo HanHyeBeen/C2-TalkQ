@@ -24,7 +24,7 @@ struct DetailView: View {
 
     var body: some View {
         ZStack {
-            C2App.BGColor
+            TalkQApp.BGColor
                 .ignoresSafeArea()
 
             ScrollView {
@@ -36,7 +36,7 @@ struct DetailView: View {
                             HStack {
                                 Text("\(aq.question.content)")
                                     .font(.custom("SUIT-ExtraBold", size: 16))
-                                    .foregroundColor(C2App.TextPrimary)
+                                    .foregroundColor(TalkQApp.TextPrimary)
                                     .padding(16)
                                     .background(
                                         Image("memo_Q")
@@ -68,7 +68,7 @@ struct DetailView: View {
                                         HStack {
                                             Text(formatDate(Date()))
                                                 .font(.custom("SUIT-Bold", size: 16))
-                                                .foregroundColor(C2App.TextSecondary)
+                                                .foregroundColor(TalkQApp.TextSecondary)
                                             
                                             Spacer()
                                             
@@ -89,10 +89,10 @@ struct DetailView: View {
                                             text: $memoText,
                                             prompt: Text("메모를 입력하세요")
                                                 .font(.custom("SUIT-ExtraBold", size: 16))
-                                                .foregroundColor(C2App.TextSub)
+                                                .foregroundColor(TalkQApp.TextSub)
                                             )
                                             .font(.custom("SUIT-ExtraBold", size: 16))
-                                            .foregroundColor(C2App.TextPrimary)
+                                            .foregroundColor(TalkQApp.TextPrimary)
                                             .padding(.vertical, 8)
                                         
                                         HStack {
@@ -111,7 +111,7 @@ struct DetailView: View {
                                                     
                                                     Text("저장")
                                                         .font(.custom("SUIT-ExtraBold", size: 16))
-                                                        .foregroundColor(C2App.Sub1)
+                                                        .foregroundColor(TalkQApp.Sub1)
                                                 }
                                             }
                                         }
@@ -127,7 +127,7 @@ struct DetailView: View {
                                         HStack {
                                             Text(formatDate(Date()))
                                                 .font(.custom("SUIT-Bold", size: 16))
-                                                .foregroundColor(C2App.TextSecondary)
+                                                .foregroundColor(TalkQApp.TextSecondary)
                                             Spacer()
                                             Button {
                                                 editingMemoID = aq.id
@@ -164,7 +164,7 @@ struct DetailView: View {
 
                                         Text(memo)
                                             .font(.custom("SUIT-ExtraBold", size: 16))
-                                            .foregroundColor(C2App.TextPrimary)
+                                            .foregroundColor(TalkQApp.TextPrimary)
                                             .padding(.top, 4)
                                     }
                                     .padding()
