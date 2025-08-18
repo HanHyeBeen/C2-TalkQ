@@ -20,7 +20,7 @@ struct LoginView: View {
             Color.backgroundColor
                 .ignoresSafeArea()
             
-            VStack(spacing: 30) {
+            VStack(spacing: 22) {
                 
             // MARK: - Logo (개발자 모드 _ 빠른 로그인 기능)
                 Button(action: {
@@ -34,12 +34,13 @@ struct LoginView: View {
                         .frame(width: 132.95)
                         .clipped()
                 }
+                .padding(.bottom, 14)
                 
             // MARK: - 닉네임 입력
                 inputNickname(userId: $userId)
                 
             // MARK: - 러너/멘토 선택
-                HStack {
+                HStack(spacing: 0) {
                     roleButton(title: "러너", tag: "러너", selectedRole: $selectedRole)
                     roleButton(title: "멘토", tag: "멘토", selectedRole: $selectedRole)
                 }
@@ -59,13 +60,14 @@ struct LoginView: View {
                             .padding()
                             .font(Font.custom("SUIT-ExtraBold", size: 20))
                             .frame(maxWidth: .infinity)
-                            .foregroundColor(TalkQApp.TextPrimary)
+                            .foregroundColor(Color.primaryTextColor)
                             .cornerRadius(10)
                     }
                 }
                 .disabled(!isLoginEnabled)
             }
-            .padding(.horizontal, 70)
+            .frame(width: 259)
+            .safeAreaPadding(.horizontal, 72)
         }
     }
     
@@ -76,7 +78,7 @@ struct LoginView: View {
         var body: some View {
             ZStack {
                 InnerShadow(buttonColor: Color.mainColor.opacity(0.4))
-                    .frame(width: 259, height: 48)
+                    .frame(height: 48)
                 
                 TextField("닉네임 (영문)", text: $userId)
                     .font(Font.custom("SUIT-ExtraBold", size: 20))
@@ -115,7 +117,7 @@ struct LoginView: View {
                     }
                     .padding(.horizontal, 20)
                 }
-                .frame(width: 259, height: 48)
+                .frame(height: 48)
             }
         }
     }

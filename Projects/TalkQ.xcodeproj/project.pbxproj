@@ -269,6 +269,7 @@
 				DEVELOPMENT_TEAM = TQR2QH6NMJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TalkQ/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TalkQ;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +302,7 @@
 				DEVELOPMENT_TEAM = TQR2QH6NMJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TalkQ/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = TalkQ;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
