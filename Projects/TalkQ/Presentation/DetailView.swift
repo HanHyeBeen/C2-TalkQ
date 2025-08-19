@@ -39,12 +39,7 @@ struct DetailView: View {
                                     .foregroundColor(TalkQApp.TextPrimary)
                                     .padding(16)
                                     .background(
-                                        Image("memo_Q")
-                                            .resizable()
-                                        
-//                                        Rectangle()
-//                                            .fill(C2App.MainColor))
-//                                            .cornerRadius(20)
+                                        InnerShadow(buttonColor: Color.mainColor)
                                     )
                                 Spacer()
                             }
@@ -58,10 +53,14 @@ struct DetailView: View {
                                         editingMemoID = aq.id
                                         memoText = ""
                                     } label: {
-                                        Image("AddBtn")
-                                            .resizable()
-                                            .frame(width: 72, height: 60)
-                                            .padding(.trailing, 8)
+                                        ZStack {
+                                            InnerShadow(buttonColor: Color.mainColor.opacity(0.3))
+                                                .frame(width: 72, height: 60)
+                                            
+                                            Image("addButton")
+                                                .resizable()
+                                                .frame(width: 29, height: 29)
+                                        }
                                     }
                                 } else if editingMemoID == aq.id {
                                     VStack(alignment: .trailing, spacing: 6) {
@@ -77,7 +76,7 @@ struct DetailView: View {
                                                 memoText = ""
                                             } label: {
                                                 ZStack {
-                                                    Image("DeleteBtn")
+                                                    Image("deleteButton")
                                                         .resizable()
                                                         .frame(width: 21, height: 21)
                                                 }
@@ -105,8 +104,7 @@ struct DetailView: View {
                                                 editingMemoID = nil
                                             } label: {
                                                 ZStack {
-                                                    Image("Detail_SaveBtn")
-                                                        .resizable()
+                                                    InnerShadow(buttonColor: Color.pointColor)
                                                         .frame(width: 60, height: 32)
                                                     
                                                     Text("저장")
@@ -119,8 +117,7 @@ struct DetailView: View {
                                     .frame(maxWidth: 250)
                                     .padding()
                                     .background(
-                                        Image("memo_A")
-                                            .resizable()
+                                        InnerShadow(buttonColor: Color.mainColor.opacity(0.3))
                                     )
                                 } else if let memo = aq.memo, let date = aq.dateMemoAdded {
                                     VStack(alignment: .leading, spacing: 6) {
@@ -133,7 +130,7 @@ struct DetailView: View {
                                                 editingMemoID = aq.id
                                                 memoText = memo
                                             } label: {
-                                                Image("EditBtn")
+                                                Image("editButton")
                                                     .resizable()
                                                     .frame(width: 21, height: 21)
                                             }
@@ -142,7 +139,7 @@ struct DetailView: View {
                                             Button {
                                                 showingDeleteAlertID = aq.id
                                             } label: {
-                                                Image("DeleteBtn")
+                                                Image("deleteButton")
                                                     .resizable()
                                                     .frame(width: 21, height: 21)
                                             }
