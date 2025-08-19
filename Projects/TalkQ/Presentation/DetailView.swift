@@ -158,7 +158,7 @@ struct DetailView: View {
                                                 }
                                             }
                                         }
-
+                                        
                                         Text(memo)
                                             .font(.custom("SUIT-ExtraBold", size: 16))
                                             .foregroundColor(TalkQApp.TextPrimary)
@@ -166,12 +166,8 @@ struct DetailView: View {
                                     }
                                     .padding()
                                     .background(
-                                        Image("memo_A")
-                                            .resizable()
-//                                        Rectangle()
-//                                            .fill(C2App.MainColor).opacity(0.3))
-//                                            .cornerRadius(20)
-                                        )
+                                        InnerShadow(buttonColor: Color.mainColor.opacity(0.3))
+                                    )
                                     .frame(maxWidth: 250)
                                 }
                             }
