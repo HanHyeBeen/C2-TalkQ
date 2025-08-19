@@ -54,7 +54,7 @@ struct LoginView: View {
                 }) {
                     ZStack {
                         InnerShadow(buttonColor: isLoginEnabled ? Color.mainColor : Color.lightgrayColor)
-                            .frame(width: 259, height: 48)
+                            .frame(height: 48)
                         
                         Text("로그인")
                             .padding()

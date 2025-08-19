@@ -287,8 +287,7 @@ struct MainView: View {
                     }
                 }) {
                     ZStack {
-                        Image("RandomBtn")
-                            .resizable()
+                        InnerShadow(buttonColor: Color.pointColor)
                             .frame(width: 289, height: 66)
                         
                         Text("뽑   기")
@@ -387,10 +386,9 @@ struct MainView: View {
                         showingResultPopup = false
                     }) {
                         ZStack {
-                            Image("RandomBtn")
-                                .resizable()
+                            InnerShadow(buttonColor: Color.pointColor)
                                 .frame(width: 135, height: 44)
-                            
+                        
                             Text("확 인")
                                 .font(
                                     Font.custom("SUIT-ExtraBold", size: 20)
